@@ -17,7 +17,7 @@ export function Hero() {
           className="glass mx-auto mb-6 inline-flex items-center gap-2 rounded-full px-4 py-1.5 text-xs tracking-wide text-muted-foreground uppercase"
         >
           <span className="h-1.5 w-1.5 rounded-full bg-accent shadow-[var(--glow-cyan)]" />
-          UI/UX Designer · AI Developer
+          UI/UX Designer · AI Developer · Chennai, India
         </motion.p>
 
         <motion.h1

@@ -7,9 +7,9 @@ import { About } from "@/components/about";
 import { ContactFooter } from "@/components/contact-footer";
 import { useLenis } from "@/hooks/use-lenis";
 
-const title = "Lawrence — UI/UX Designer & AI Developer";
+const title = "Lawrence.ai — UI/UX Designer & AI Developer | Chennai";
 const description =
-  "Portfolio of Lawrence, an emerging UI/UX designer and AI developer building AI-driven digital experiences with generative tools and agentic workflows.";
+  "Portfolio of Lawrence, a UI/UX designer and AI developer in Chennai, Tamil Nadu, India building AI-driven digital experiences with generative tools and agentic workflows.";
 
 export const Route = createFileRoute("/")({
   head: () => ({
