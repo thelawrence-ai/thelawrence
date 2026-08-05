@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Check, Copy, Mail } from "lucide-react";
+import { Check, Copy, Mail, MapPin } from "lucide-react";
 import { Reveal } from "./reveal";
 import { GithubIcon, InstagramIcon } from "./brand-icons";
 
