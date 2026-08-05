@@ -27,8 +27,18 @@ export function About() {
         <Reveal>
           <div className="glass relative h-full overflow-hidden rounded-3xl p-8">
             <div className="mesh pointer-events-none absolute inset-0 -z-10 opacity-70" />
-            <p className="text-xs tracking-[0.2em] text-accent uppercase">About Lawrence</p>
-            <h2 className="mt-3 text-3xl font-bold sm:text-4xl">
+            <div className="flex items-center gap-4">
+              <img
+                src={profile.url}
+                alt="Portrait of Lawrence, UI/UX designer and AI developer"
+                width={96}
+                height={96}
+                loading="lazy"
+                className="h-16 w-16 shrink-0 rounded-2xl border border-white/15 object-cover shadow-lg sm:h-20 sm:w-20"
+              />
+              <p className="text-xs tracking-[0.2em] text-accent uppercase">About Lawrence</p>
+            </div>
+            <h2 className="mt-4 text-3xl font-bold sm:text-4xl">
               Learning design in the <span className="text-gradient">age of AI</span>
             </h2>
             <p className="mt-5 text-sm leading-relaxed text-muted-foreground sm:text-base">
