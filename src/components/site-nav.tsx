@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { motion } from "motion/react";
-import { Menu, X } from "lucide-react";
+import { Menu, X, MapPin } from "lucide-react";
+import profile from "@/assets/lawrence-profile.png.asset.json";
 
 const links = [
   { label: "Work", href: "#work" },
