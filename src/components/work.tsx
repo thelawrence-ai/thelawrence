@@ -1,30 +1,34 @@
 import { motion } from "motion/react";
+import { ArrowUpRight } from "lucide-react";
 import { Reveal } from "./reveal";
-import dashboard from "@/assets/project-dashboard.jpg";
-import workflow from "@/assets/project-workflow.jpg";
-import landing from "@/assets/project-landing.jpg";
+import finedine from "@/assets/project-finedine.jpg.asset.json";
+import barbershop from "@/assets/project-barbershop.jpg.asset.json";
+import premiumtrip from "@/assets/project-premiumtrip.jpg.asset.json";
 
 const projects = [
   {
-    title: "AI Agent Dashboard Concept",
-    desc: "Sleek UI mockup created using Figma & Lovable AI.",
-    tags: ["Figma", "Lovable AI", "Design System"],
-    image: dashboard,
-    alt: "Dark AI agent dashboard interface concept with violet and cyan accents",
+    title: "Fine Dine — Restaurant Experience",
+    desc: "Elegant dining site with menu storytelling and reservation flow.",
+    tags: ["UI Design", "Landing", "Motion"],
+    image: finedine.url,
+    alt: "Fine Dine restaurant website homepage design",
+    href: "https://fine-dine-x7mruhnu.manus.space",
   },
   {
-    title: "Generative Workflow Automation",
-    desc: "Agentic execution built using Claude & Antigravity.",
-    tags: ["Claude", "Antigravity", "Agents"],
-    image: workflow,
-    alt: "Glowing node graph visualising an agentic automation workflow",
+    title: "Barbershop Booking UI",
+    desc: "Bold grooming brand site with service cards and booking CTA.",
+    tags: ["Branding", "Web UI", "Responsive"],
+    image: barbershop.url,
+    alt: "Barbershop website homepage design",
+    href: "https://barbershop-9k4le9u4.manus.space",
   },
   {
-    title: "Modern Landing Page UI",
-    desc: "Responsive, micro-interactive design built with Lovable AI.",
-    tags: ["Lovable AI", "Tailwind", "Motion"],
-    image: landing,
-    alt: "Dark modern landing page user interface mockup",
+    title: "PremiumTrip — Travel Platform",
+    desc: "Premium travel booking concept with immersive destination visuals.",
+    tags: ["Product UI", "Travel", "Design System"],
+    image: premiumtrip.url,
+    alt: "PremiumTrip travel booking website homepage design",
+    href: "https://premiumtrip-vw54ymat.manus.space/",
   },
 ];
 
@@ -47,31 +51,36 @@ export function Work() {
                 transition={{ type: "spring", stiffness: 260, damping: 20 }}
                 className="glass group h-full overflow-hidden rounded-3xl"
               >
-                <div className="relative aspect-[4/3] overflow-hidden">
-                  <img
-                    src={p.image}
-                    alt={p.alt}
-                    loading="lazy"
-                    width={1200}
-                    height={900}
-                    className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
-                  />
-                  <div className="pointer-events-none absolute inset-0 bg-linear-to-t from-background/80 to-transparent" />
-                </div>
-                <div className="p-6">
-                  <h3 className="text-lg font-semibold">{p.title}</h3>
-                  <p className="mt-2 text-sm text-muted-foreground">{p.desc}</p>
-                  <ul className="mt-4 flex flex-wrap gap-2">
-                    {p.tags.map((t) => (
-                      <li
-                        key={t}
-                        className="rounded-full border border-border px-3 py-1 text-xs text-muted-foreground"
-                      >
-                        {t}
-                      </li>
-                    ))}
-                  </ul>
-                </div>
+                <a href={p.href} target="_blank" rel="noopener noreferrer" className="block h-full">
+                  <div className="relative aspect-4/3 overflow-hidden">
+                    <img
+                      src={p.image}
+                      alt={p.alt}
+                      loading="lazy"
+                      width={1200}
+                      height={900}
+                      className="h-full w-full object-cover object-top transition-transform duration-700 group-hover:scale-105"
+                    />
+                    <div className="pointer-events-none absolute inset-0 bg-linear-to-t from-background/80 to-transparent" />
+                  </div>
+                  <div className="p-6">
+                    <h3 className="flex items-start gap-2 text-lg font-semibold">
+                      {p.title}
+                      <ArrowUpRight className="mt-1 h-4 w-4 shrink-0 text-accent transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
+                    </h3>
+                    <p className="mt-2 text-sm text-muted-foreground">{p.desc}</p>
+                    <ul className="mt-4 flex flex-wrap gap-2">
+                      {p.tags.map((t) => (
+                        <li
+                          key={t}
+                          className="rounded-full border border-border px-3 py-1 text-xs text-muted-foreground"
+                        >
+                          {t}
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                </a>
               </motion.article>
             </Reveal>
           ))}
