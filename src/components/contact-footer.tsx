@@ -3,7 +3,7 @@ import { Check, Copy, Mail, MapPin } from "lucide-react";
 import { Reveal } from "./reveal";
 import { GithubIcon, InstagramIcon } from "./brand-icons";
 
-const EMAIL = "thelawrence.ai@gamil.com";
+const EMAIL = "thelawrence.ai@gmail.com";
 
 export function ContactFooter() {
   const [copied, setCopied] = useState(false);
