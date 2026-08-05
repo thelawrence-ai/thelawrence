@@ -34,12 +34,20 @@ export function SiteNav() {
           scrolled ? "glass" : "border border-transparent"
         }`}
       >
-        <a href="#top" className="group flex items-center gap-2">
-          <span className="bg-brand grid h-8 w-8 place-items-center rounded-xl text-sm font-bold text-primary-foreground shadow-[var(--glow-violet)]">
-            L
-          </span>
-          <span className="font-display text-lg font-bold tracking-tight drop-shadow-[0_0_12px_color-mix(in_oklab,var(--violet)_60%,transparent)]">
-            Lawrence
+        <a href="#top" className="group flex items-center gap-2.5">
+          <img
+            src={profile.url}
+            alt="Lawrence profile portrait"
+            className="h-9 w-9 rounded-xl object-cover ring-2 ring-[color-mix(in_oklab,var(--violet)_55%,transparent)] shadow-[var(--glow-violet)]"
+          />
+          <span className="flex flex-col leading-tight">
+            <span className="font-display text-lg font-bold tracking-tight drop-shadow-[0_0_12px_color-mix(in_oklab,var(--violet)_60%,transparent)]">
+              Lawrence.ai
+            </span>
+            <span className="hidden items-center gap-1 text-[10px] tracking-wide text-muted-foreground uppercase sm:flex">
+              <MapPin className="h-3 w-3 text-accent" />
+              Chennai, Tamil Nadu, India
+            </span>
           </span>
         </a>
 
