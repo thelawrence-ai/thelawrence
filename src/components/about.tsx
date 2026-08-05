@@ -1,5 +1,6 @@
 import { Reveal } from "./reveal";
 import { Brain, PenTool, Workflow } from "lucide-react";
+import profile from "@/assets/lawrence-profile.png.asset.json";
 
 const focus = [
   {
