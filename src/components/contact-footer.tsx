@@ -84,9 +84,15 @@ export function ContactFooter() {
         </Reveal>
 
         <Reveal delay={0.2}>
-          <p className="glass mx-auto mt-8 inline-flex rounded-full px-4 py-2 text-sm text-muted-foreground">
-            🟢 Open for entry-level UI/UX &amp; AI Creator roles.
-          </p>
+          <div className="mt-8 flex flex-wrap items-center justify-center gap-3">
+            <p className="glass inline-flex rounded-full px-4 py-2 text-sm text-muted-foreground">
+              🟢 Open for entry-level UI/UX &amp; AI Creator roles.
+            </p>
+            <p className="glass inline-flex items-center gap-2 rounded-full px-4 py-2 text-sm text-muted-foreground">
+              <MapPin className="h-4 w-4 text-accent" />
+              Chennai, Tamil Nadu, India
+            </p>
+          </div>
         </Reveal>
 
         <div className="mt-14 border-t border-border pt-6 text-xs text-muted-foreground">
