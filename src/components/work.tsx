@@ -3,7 +3,7 @@ import { ArrowUpRight } from "lucide-react";
 import { Reveal } from "./reveal";
 import finedine from "@/assets/project-finedine.jpg.asset.json";
 import barbershop from "@/assets/project-barbershop.jpg.asset.json";
-import premiumtrip from "@/assets/project-premiumtrip.jpg.asset.json";
+import holidays from "@/assets/project-holidays.jpg";
 
 const projects = [
   {
@@ -23,12 +23,12 @@ const projects = [
     href: "https://barbershop-9k4le9u4.manus.space",
   },
   {
-    title: "PremiumTrip — Travel Platform",
-    desc: "Premium travel booking concept with immersive destination visuals.",
-    tags: ["Product UI", "Travel", "Design System"],
-    image: premiumtrip.url,
-    alt: "PremiumTrip travel booking website homepage design",
-    href: "https://premiumtrip-vw54ymat.manus.space/",
+    title: "Holidays — Boutique Travel Packages",
+    desc: "Curated holiday packages across India & abroad with a callback-driven enquiry flow.",
+    tags: ["Web UI", "Travel", "Responsive"],
+    image: holidays,
+    alt: "Holidays boutique travel packages website homepage design",
+    href: "https://holidays-ivory.vercel.app/",
   },
 ];
 
