@@ -2,7 +2,7 @@ import { motion } from "motion/react";
 import { ArrowUpRight } from "lucide-react";
 import { Reveal } from "./reveal";
 import finedine from "@/assets/project-finedine.jpg.asset.json";
-import barbershop from "@/assets/project-barbershop.jpg.asset.json";
+import paint from "@/assets/project-paint.jpg.asset.json";
 import holidays from "@/assets/project-holidays.jpg";
 
 const projects = [
@@ -15,12 +15,12 @@ const projects = [
     href: "https://fine-dine-x7mruhnu.manus.space",
   },
   {
-    title: "Barbershop Booking UI",
-    desc: "Bold grooming brand site with service cards and booking CTA.",
-    tags: ["Branding", "Web UI", "Responsive"],
-    image: barbershop.url,
-    alt: "Barbershop website homepage design",
-    href: "https://barbershop-9k4le9u4.manus.space",
+    title: "Paint — Creative Studio",
+    desc: "A bold creative painting studio site with expressive visuals and a smooth, immersive layout.",
+    tags: ["Web UI", "Creative", "Responsive"],
+    image: paint.url,
+    alt: "Paint creative studio website homepage design",
+    href: "https://paint-phi-six.vercel.app/",
   },
   {
     title: "Holidays — Boutique Travel Packages",
