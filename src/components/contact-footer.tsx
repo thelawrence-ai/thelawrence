@@ -1,22 +1,10 @@
-import { useState } from "react";
-import { Check, Copy, Mail, MapPin } from "lucide-react";
+import { Mail, MapPin } from "lucide-react";
 import { Reveal } from "./reveal";
 import { GithubIcon, InstagramIcon } from "./brand-icons";
 
 const EMAIL = "thelawrence.ai@gmail.com";
 
 export function ContactFooter() {
-  const [copied, setCopied] = useState(false);
-
-  const copy = async () => {
-    try {
-      await navigator.clipboard.writeText(EMAIL);
-      setCopied(true);
-      setTimeout(() => setCopied(false), 2000);
-    } catch {
-      setCopied(false);
-    }
-  };
 
   return (
     <footer id="contact" className="relative overflow-hidden px-4 pt-24 pb-12">
