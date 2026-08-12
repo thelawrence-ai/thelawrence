@@ -21,24 +21,13 @@ export function ContactFooter() {
         </Reveal>
 
         <Reveal delay={0.08}>
-          <div className="glass mx-auto mt-9 flex w-full max-w-md flex-col items-center gap-3 rounded-2xl p-3 sm:flex-row sm:justify-between">
-            <a
-              href={`mailto:${EMAIL}`}
-              className="flex items-center gap-2 px-3 text-sm font-medium break-all sm:text-base"
-            >
-              <Mail className="h-4 w-4 shrink-0 text-accent" />
-              {EMAIL}
-            </a>
-            <button
-              type="button"
-              onClick={copy}
-              aria-label="Copy email address"
-              className="bg-brand inline-flex w-full items-center justify-center gap-2 rounded-xl px-4 py-2 text-sm font-semibold text-primary-foreground transition-shadow hover:shadow-[var(--glow-violet)] sm:w-auto"
-            >
-              {copied ? <Check className="h-4 w-4" /> : <Copy className="h-4 w-4" />}
-              {copied ? "Copied" : "Copy"}
-            </button>
-          </div>
+          <a
+            href={`mailto:${EMAIL}`}
+            className="bg-brand mx-auto mt-9 inline-flex w-full max-w-md items-center justify-center gap-2 rounded-2xl px-4 py-3 text-sm font-semibold text-primary-foreground transition-shadow hover:shadow-[var(--glow-violet)] sm:text-base"
+          >
+            <Mail className="h-4 w-4 shrink-0" />
+            {EMAIL}
+          </a>
         </Reveal>
 
         <Reveal delay={0.14}>
