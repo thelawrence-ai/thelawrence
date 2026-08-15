@@ -1,18 +1,27 @@
 import { motion } from "motion/react";
 import { ArrowUpRight } from "lucide-react";
 import { Reveal } from "./reveal";
-import finedine from "@/assets/project-finedine.jpg.asset.json";
+import kebabs from "@/assets/project-kebabs.jpg.asset.json";
+import seafoods from "@/assets/project-seafoods.jpg";
 import paint from "@/assets/project-paint.jpg.asset.json";
 import holidays from "@/assets/project-holidays.jpg";
 
 const projects = [
   {
-    title: "Fine Dine — Restaurant Experience",
-    desc: "Elegant dining site with menu storytelling and reservation flow.",
-    tags: ["UI Design", "Landing", "Motion"],
-    image: finedine.url,
-    alt: "Fine Dine restaurant website homepage design",
-    href: "https://fine-dine-x7mruhnu.manus.space",
+    title: "Kebabs — Grill House",
+    desc: "Appetite-driven restaurant site with sizzling visuals and an easy order-enquiry flow.",
+    tags: ["Web UI", "Food", "Landing"],
+    image: kebabs.url,
+    alt: "Kebabs grill house website homepage design",
+    href: "https://kebabs-taupe.vercel.app/",
+  },
+  {
+    title: "Seafoods — Coastal Kitchen",
+    desc: "Fresh coastal seafood brand experience with rich imagery and a clean menu layout.",
+    tags: ["Web UI", "Branding", "Responsive"],
+    image: seafoods,
+    alt: "Seafoods coastal kitchen website homepage design",
+    href: "https://seafoods-delta.vercel.app/",
   },
   {
     title: "Paint — Creative Studio",
@@ -31,6 +40,7 @@ const projects = [
     href: "https://holidays-ivory.vercel.app/",
   },
 ];
+
 
 export function Work() {
   return (

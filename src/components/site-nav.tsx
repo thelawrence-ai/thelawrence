@@ -42,7 +42,7 @@ export function SiteNav() {
           />
           <span className="flex flex-col leading-tight">
             <span className="font-display text-lg font-bold tracking-tight drop-shadow-[0_0_12px_color-mix(in_oklab,var(--violet)_60%,transparent)]">
-              Lawrence.ai
+              The Lawrence
             </span>
             <span className="hidden items-center gap-1 text-[10px] tracking-wide text-muted-foreground uppercase sm:flex">
               <MapPin className="h-3 w-3 text-accent" />
